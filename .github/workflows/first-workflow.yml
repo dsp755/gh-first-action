@@ -1,0 +1,13 @@
+# Name of the workflow
+name: First Workflow
+on: workflow_dispatch
+jobs:
+  # job name is not reserved
+  first-job:
+    # available runners: https://github.com/actions/runner-images
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Print greeting
+        run: echo "hello world!"
+      - name: Print goodbye
+        run: echo "Done - goodbye"
